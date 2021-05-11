@@ -312,7 +312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.8, y: 4.2, z: -100}
+  m_LocalPosition: {x: -6.8, y: 0.9, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1017,7 +1017,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954045058}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.4499998, z: 0}
+  m_LocalPosition: {x: 0, y: -3.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1014274921}
@@ -1033,10 +1033,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1014274921}
   - component: {fileID: 1014274923}
+  - component: {fileID: 1014274926}
   - component: {fileID: 1014274922}
   - component: {fileID: 1014274925}
   - component: {fileID: 1014274924}
-  - component: {fileID: 1014274926}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -1106,7 +1106,19 @@ MonoBehaviour:
   m_CeilingCheck: {fileID: 338158248}
   OnLandEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1014274926}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: OnLanding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!58 &1014274924
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1162,9 +1174,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1014274923}
+  animator: {fileID: 1350324405}
   runSpeed: 75
-  jumpCount: 1
-  maxJumps: 1
+  ground: {fileID: 886294406}
 --- !u!1 &1072139228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,6 +1269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1350324407}
   - component: {fileID: 1350324406}
+  - component: {fileID: 1350324405}
   m_Layer: 8
   m_Name: Megaman Based Sprite_0 (1)
   m_TagString: Player
@@ -1264,6 +1277,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &1350324405
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350324404}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: db688725c4cd9bb40aa5489c7ed8f500, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &1350324406
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1366,7 +1398,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420447965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -3.2999997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 886294407}

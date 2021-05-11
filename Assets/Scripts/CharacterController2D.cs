@@ -56,13 +56,17 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = false;
+				/*
 				if (wasGrounded)
                 {
 					OnLandEvent.Invoke();
 					jumpCount = maxJumps;
-                }
-					
-				
+                }*/
+				if (wasGrounded && m_Rigidbody2D.velocity.y < 0)
+				{
+					OnLandEvent.Invoke();
+					jumpCount = maxJumps;
+				}
 			}
 		}
 	}
