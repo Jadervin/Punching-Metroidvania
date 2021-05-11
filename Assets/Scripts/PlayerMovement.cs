@@ -8,10 +8,11 @@ public class PlayerMovement : MonoBehaviour
 	public CharacterController2D controller;
 
 	public float runSpeed = 40f;
-
 	float horizontalMove = 0f;
 	bool jump = false;
 	//bool crouch = false;
+	public int jumpCount = 1;
+	public int maxJumps = 1;
 
 	// Update is called once per frame
 	void Update()
@@ -19,12 +20,16 @@ public class PlayerMovement : MonoBehaviour
 
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
-		if (Input.GetButtonDown("Jump"))
+		if (Input.GetButtonDown("Jump") && jumpCount!=0)
 		{
 			Debug.Log("Jumping");
 			jump = true;
+			//jumpCount-=1;
 		}
-
+		else if(Input.GetButtonDown("Jump") && jumpCount == 0)
+        {
+			jump = false;
+        }
 		
 
 		/*
@@ -43,17 +48,13 @@ public class PlayerMovement : MonoBehaviour
 
 	}
 
-	void LateUpdate()
+	void FixedUpdate()
 	{
-		// Move our character
 		controller.Move(horizontalMove * Time.fixedDeltaTime, jump);
-		//jump = false;
+		jump = false;
 		
-		if (Input.GetKeyDown("space"))
-		{
-			Debug.Log("Jumping False");
-			jump = false;
-		}
 		
 	}
+
+	
 }

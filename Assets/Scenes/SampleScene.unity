@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 27641582}
   - component: {fileID: 27641583}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BKG01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 752906882}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -366,7 +366,7 @@ GameObject:
   - component: {fileID: 886294408}
   m_Layer: 9
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1094,12 +1094,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abefd704f94c27a43ae41506062e8da9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxJumps: 1
+  jumpCount: 1
   m_JumpForce: 20
   m_MovementSmoothing: 0.077
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 567
   m_GroundCheck: {fileID: 954045059}
   m_CeilingCheck: {fileID: 338158248}
   OnLandEvent:
@@ -1161,6 +1163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1014274923}
   runSpeed: 75
+  jumpCount: 1
+  maxJumps: 1
 --- !u!1 &1072139228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,7 +1175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1072139229}
   - component: {fileID: 1072139230}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BKG01 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1337,7 +1341,7 @@ GameObject:
   - component: {fileID: 1420447966}
   m_Layer: 9
   m_Name: Grid
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1379,7 +1383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1427250795}
   - component: {fileID: 1427250796}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BKG01 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1461,7 +1465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1988396815}
   - component: {fileID: 1988396816}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BKG01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
