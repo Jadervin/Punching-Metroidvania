@@ -65,6 +65,7 @@ public class CharacterController2D : MonoBehaviour
 
 				if (wasGrounded)
 				{
+				//FOR WHEN THE PLAYER IS FALLING
 					//Debug.Log("Invoke Landing Event");
 					//OnLandEvent.Invoke();
 					
