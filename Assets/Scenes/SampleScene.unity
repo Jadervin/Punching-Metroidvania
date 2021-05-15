@@ -4312,14 +4312,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 969289316311436632, guid: d210c8deefb68ce4c9fe5d801c0db986, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: d8c3962a1118c8f438e29c8d38eb67c0, type: 2}
-    - target: {fileID: 969289316311436633, guid: d210c8deefb68ce4c9fe5d801c0db986, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: d8c3962a1118c8f438e29c8d38eb67c0, type: 2}
     - target: {fileID: 969289316311436635, guid: d210c8deefb68ce4c9fe5d801c0db986, type: 3}
       propertyPath: ground
       value: 
@@ -4372,10 +4364,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Player Parent '
       objectReference: {fileID: 0}
-    - target: {fileID: 969289316311436639, guid: d210c8deefb68ce4c9fe5d801c0db986, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d210c8deefb68ce4c9fe5d801c0db986, type: 3}
 --- !u!1001 &3402102178307363624
@@ -4388,10 +4376,6 @@ PrefabInstance:
     - target: {fileID: 3402102177704988216, guid: afc9046506bb8544f910241625985561, type: 3}
       propertyPath: m_Name
       value: Dog Parent
-      objectReference: {fileID: 0}
-    - target: {fileID: 3402102177704988216, guid: afc9046506bb8544f910241625985561, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3402102177704988217, guid: afc9046506bb8544f910241625985561, type: 3}
       propertyPath: m_RootOrder

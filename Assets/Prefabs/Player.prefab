@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038618657}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -7.42, y: 0, z: 0}
+  m_LocalPosition: {x: -4.94, y: -0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 969289316311436636}
@@ -297,6 +297,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 369d2f2264534eb4aa740ede556810b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 969289314768504448}
+  shootingTrigger: Shooting
+  firePoint: {fileID: 2038618658}
+  fistPrefab: {fileID: 1530856085067289235, guid: 2888bcc9481071f41ba8e251586bfc09, type: 3}
 --- !u!50 &969289316311436639
 Rigidbody2D:
   serializedVersion: 4
@@ -327,7 +331,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 969289316311436637}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d8c3962a1118c8f438e29c8d38eb67c0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -353,7 +357,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 969289316311436637}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d8c3962a1118c8f438e29c8d38eb67c0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

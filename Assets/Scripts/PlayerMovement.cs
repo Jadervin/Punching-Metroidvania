@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
 		animator.SetFloat("speed", Mathf.Abs(horizontalMove));
 
-		if (Input.GetButtonDown("Jump") /*&& jumpCount!=0*/)
+		if (Input.GetKeyDown("w") /*&& jumpCount!=0*/)
 		{
 			//Debug.Log("Jumping");
 			jump = true;
@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 			//jumpCount-=1;
 		}
 
-		else if(Input.GetButtonDown("Jump") /*&& jumpCount == 0*/)
+		else if(Input.GetKeyDown("w") /*&& jumpCount == 0*/)
 		{
 			jump = false;
         }
