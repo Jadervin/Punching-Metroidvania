@@ -348,10 +348,11 @@ PolygonCollider2D:
     - - {x: -27.80911, y: 34.519905}
       - {x: -28.7835, y: 11.693441}
       - {x: -27.766987, y: -16.078495}
-      - {x: 0.9019876, y: -16.203344}
-      - {x: 40.6052, y: -16.270294}
-      - {x: 40.799194, y: 11.434504}
-      - {x: 40.05899, y: 34.187405}
+      - {x: 0.20278412, y: -17.252146}
+      - {x: 41.304405, y: -18.717491}
+      - {x: 109.999405, y: -20.375967}
+      - {x: 111.14952, y: 14.494841}
+      - {x: 110.23189, y: 35.322273}
 --- !u!114 &42055409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -980,7 +981,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 203.84332, y: -3.9865484, z: -71.165726}
+  m_LocalPosition: {x: -10.100002, y: 0.09999943, z: -71.165726}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4883,7 +4884,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &893711723
 Transform:
   m_ObjectHideFlags: 0
@@ -4906,7 +4907,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893711722}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
   m_Name: 
@@ -4933,8 +4934,8 @@ MonoBehaviour:
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
   m_Priority: 10
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
+  m_StandbyUpdate: 1
+  m_LookAt: {fileID: 1014274921}
   m_Follow: {fileID: 1014274921}
   m_Lens:
     FieldOfView: 60
@@ -5316,7 +5317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341483223}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 250.5, y: -7.2, z: 144.04558}
+  m_LocalPosition: {x: 229.6, y: -0.6, z: 144.04558}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 195643379}
@@ -5876,12 +5877,12 @@ MonoBehaviour:
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
+  m_DeadZoneWidth: 0.48
+  m_DeadZoneHeight: 0.21
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
+  m_SoftZoneWidth: 0.82
+  m_SoftZoneHeight: 0.45
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
